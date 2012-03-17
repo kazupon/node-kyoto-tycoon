@@ -4,5 +4,11 @@
   "author": "swdyh",
   "directories": { "lib": "./lib" },
   "bin": { "kt-cli": "./bin/kt-cli.js" },
-  "main": "./lib/kyoto-tycoon"
+  "main": "./lib/kyoto-tycoon",
+  "devDependencies": {
+    "vows": ">= 0.6.2"
+  },
+  "engines": {
+    "node": ">= 0.6.11"
+  }
 }
