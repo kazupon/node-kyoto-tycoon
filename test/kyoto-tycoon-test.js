@@ -239,4 +239,14 @@ vows.describe('KyotoTycoon').addBatch({
             }
         }
     }
+}).addBatch({
+    'play_script': {
+        topic: function() {
+            kt.play_script('echo', { key: 'value' }, this.callback)
+        },
+        'should be `value` of key': function(err, data) {
+            assert.isNull(err)
+            assert.equal(data.key, 'value')
+        }
+    }
 }).export(module)
