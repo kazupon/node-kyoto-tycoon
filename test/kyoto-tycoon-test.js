@@ -244,7 +244,7 @@ vows.describe('KyotoTycoon').addBatch({
         topic: function() {
             kt.play_script('echo', { key: 'value' }, this.callback)
         },
-        'should be `value` of key': function(err, data) {
+        'should be `value`': function(err, data) {
             assert.isNull(err)
             assert.equal(data.key, 'value')
         }
